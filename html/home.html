@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../bootstrap-4.0.0-dist/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="../bootstrap-4.0.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/home.css">
+<!--    <link rel="stylesheet" href="./resources/css/style.css">-->
+
+    <title>Covid Dashboard</title>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="row header">
+            <div class="col-12 my-auto">
+                <nav class="navbar  navbar-expand-lg navbar-light">
+                  <a class="navbar-brand" href=""><img src="../images/logo.png" width="155" height="70" class="d-inline-block align-top" alt=""></a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                      
+                        <li class="nav-item active">
+                        <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
+                      </li>
+                      
+                        <li class="nav-item">
+                        <a class="nav-link" href="#aboutsec">About</a>
+                      </li>
+                      
+                        <li class="nav-item">
+                        <a class="nav-link" href="#symptomssec">Symptoms</a>
+                      </li>
+                      
+                        <li class="nav-item">
+                        <a class="nav-link" href="#preventionssec">Preventions</a>
+                      </li>
+                      
+                        <li class="nav-item">
+                        <a class="nav-link" href="indiaTracker.html">IndiaCases</a>
+                      </li>
+                      
+                        <li class="nav-item">
+                        <a class="nav-link" href="worldTracker.html">WorldCases</a>
+                      </li>
+                     
+                        <li class="nav-item">
+                        <a class="nav-link" href="#chartsec">Statistics</a>
+                      </li>
+                      
+                        <li class="nav-item">
+                        <a class="nav-link" href="#contactsec">Contact</a>
+                      </li>
+                    </ul>
+                  </div>
+                </nav>
+            </div>
+        </div>
+        
+        <div class="row secondrow">
+            <div class="col-sm-12 col-md-5 my-auto left">
+                <img src="../images/mask.png" alt="image" class="beatingimage">
+            </div>
+            
+            <div class="col-sm-12 col-md-7 right text-center my-auto">
+                <h1 class="align-text-middle">Lets Fight Together Against Novel Corona Virus</h1>
+            </div>
+        </div>
+        
+        <div class="row thirdrow">
+            <div class="col-sm-12 col-md text-center my-auto">
+                <img src="../images/logo.png" alt="logo">
+                <h1>Welcome to COVID Tracker</h1>
+                <h3>Stay Home, Stay Safe</h3>
+            </div>
+        </div>
+        
+        <div class="row sixthrow" id="chartsec">
+            <div class="col">
+                <main>
+                    <div class="stats">
+                        <div class="latest-report">
+                            <div class="country">
+                                <div class="name">Loading...</div>
+                                <div class="change-country">change</div>
+                                <div class="search-country hide">
+                                    <div class="search-box">
+                                        <input type="text" id="search-input" placeholder="Search Country...">
+                                        <img class="close" src="../images/close.svg" alt="">
+                                    </div>
+                                    <div class="country-list">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="total-cases">
+                                <div class="title">Total Cases</div>
+                                <div class="value">0</div>
+                                <div class="new-value">+0</div>
+                            </div>
+                            <div class="recovered">
+                                <div class="title">Recovered</div>
+                                <div class="value">0</div>
+                                <div class="new-value">+0</div>
+                            </div>
+                            <div class="deaths">
+                                <div class="title">Deaths</div>
+                                <div class="value">0</div>
+                                <div class="new-value">+0</div>
+                            </div>
+                        </div>
+                        <div class="chart">
+                            <canvas id="axes_line_chart"></canvas>
+                        </div>
+                    </div>
+                </main>
+
+            </div>
+        </div>
+        
+        
+        
+        <div class="row fourthrow" id="aboutsec">
+            <div class="col text-center my-auto">
+                <h1>ABOUT COVID-19</h1>
+            </div>
+        </div>
+        
+        <div class="row fifthrow">
+            <div class="col-sm-12 col-md-6 leftimg my-auto text-center">
+                <img src="../images/aboutimg.jpg" alt="aboutimg">
+            </div> 
+            <div class="col-sm-12 col-md-6 right my-auto ">
+                <h2>What is Covid-19 ?</h2><br>
+                <p>Coronaviruses are a group of related RNA viruses that cause diseases in mammals and birds. In humans, these viruses cause respiratory tract infections that can range from mild to lethal.</p>
+                <p>Mild illnesses include some cases of the common cold (which is caused also by certain other viruses, predominantly rhinoviruses), while more lethal varieties can cause SARS, MERS, and COVID-19. Symptoms in other species vary: in chickens, they cause an upper respiratory tract disease, while in cows and pigs they cause diarrhea. There are as yet no vaccines or antiviral drugs to prevent or treat human coronavirus infections.</p>
+            </div>
+        </div>
+ 
+        <div class="row seventhrow" id="symptomssec">
+            <div class="col">
+                <div class="row subrowone">
+                    <div class="col text-center my-auto">
+                        <h1>Corona Virus Symptoms</h1>
+                    </div>
+                </div>
+                <div class="row subrowtwo">
+                    <div class="col-md-3">
+                    
+                    </div>
+                    <div class="col-sm-12 col-md-9">
+                        <div class="row anothernestup">
+                            <div class="col-sm-12 col-md-3 text-center">
+                                <img src="../images/cough.jpg" alt="coughing">
+                                <h5>Cough</h5>
+                            </div>
+                            <div class="col-sm-12 col-md-3 text-center">
+                                <img src="../images/fever.jpeg" alt="feverimg">
+                                <h5>Fever</h5>
+                            </div>
+                            <div class="col-sm-12 col-md-3 text-center">
+                                <img src="../images/runningnose.jpeg" alt="runnungnoseimg">
+                                <h5>Running Nose</h5>
+                            </div>
+                        </div>
+                        
+                        <div class="row anothernestdown">
+                            <div class="col-sm-12 col-md-3 text-center">
+                                <img src="../images/cold.jpg" alt="coldimg">
+                                <h5>Cold</h5>
+                            </div>
+                            <div class="col-sm-12 col-md-3 text-center">
+                                <img src="../images/tiredness.png" alt="tiredperson">
+                                <h5>Tiredness</h5>
+                            </div>
+                            <div class="col-sm-12 col-md-3 text-center">
+                                <img src="../images/breathing.jpeg" alt="breathingproblem">
+                                <h5>Breathing Problem</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row eighthrow" id="preventionssec">
+            <div class="col">
+                <div class="row onenest">
+                    <div class="col text-center my-auto">
+                        <h1>Steps That Keeps Corona Aaway</h1>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 col-md">
+                            <img src="../images/handwash.jpg">
+                            <h7>Hand Wash</h7>
+                            <p>wash your hand regularly for 20 seconds, with soap and water or alcohol-based hand sanitizer.</p>
+                        </div>
+                        <div class="col-sm-12 col-md">
+                            <img src="../images/wearmask.png">
+                            <h7>Wear Mask</h7>
+                            <p>Cover your nose and mouth with a disposable tissue or flexed elbow when you cough and sneeze.</p>
+                        </div>
+                        <div class="col-sm-12 col-md">
+                            <img src="../images/social-distancing.png">
+                            <h7>Social Distancing</h7>
+                            <p>Avoid close contact with people who shows symptoms of coronvirus.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 col-md">
+                            <img src="../images/stayhome.jpg" alt="">
+                            <h7>Stay Home</h7>
+                            <p>Stay home and self-isolate from others in the household if you feel unwell.</p>
+                        </div>
+                        <div class="col-sm-12 col-md">
+                            <img src="../images/stayinformative.jpg">
+                            <h7>Stay Informative</h7>
+                            <p>Stay informed by reading authanticated news and follow the lockdown rules as per government guidelines.</p>
+                        </div>
+                        <div class="col-sm-12 col-md">
+                            <img src="../images/medicalcare.jpg">
+                            <h7>Medical Care</h7>
+                            <p>If have any symptoms of the virus, either self-quarantine or contact nearby medical center.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container" id="contactsec">
+            <div class=" row ninthrow">
+                <div class="col">
+                    <h1>Contact Us</h1>
+                    
+                    <form>
+                      <div class="form-group">
+                        <label for="InputEmail1">Email address</label>
+                        <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                      </div>
+                        
+                      <div class="form-group">
+                        <label for="InputPassword1">Password</label>
+                        <input type="password" class="form-control" id="InputPassword1" placeholder="Password">
+                      </div>
+                        
+                      <div class="form-group">
+                        <label for="InputMobile">Mobile No.</label>
+                        <input type="tel" class="form-control" id="InputMobile" placeholder="Mobile No.">
+                      </div>
+                        
+                        <label for="symptoms">Select Symptoms</label><br>
+                      <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                          <label class="form-check-label" for="inlineCheckbox1">Cold</label>
+                      </div>
+                        
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                          <label class="form-check-label" for="inlineCheckbox2">Fever</label>
+                        </div>
+                        
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                      <label class="form-check-label" for="inlineCheckbox3">Breathing Difficulty</label>
+                    </div>
+                        
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                          <label class="form-check-label" for="inlineCheckbox3">Weakness</label>
+                        </div>
+                      <br>
+                      <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Provide description</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                      </div>
+                        
+                      <div class="text-center">
+                        <button type="submit" class="btn btn-primary ">Submit</button>  
+                      </div>
+                      
+                </form>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row footerrow">
+            <div class="col text-center my-auto">
+                <footer class="page-footer font-small">
+                  <div class="footer-copyright text-center py-3">© Copyright: @Nikhil Kumar</div>
+               </footer>
+            </div>
+        </div>
+    </div>
+    
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js" integrity="sha256-R4pqcOYV8lt7snxMQO/HSbVCFRPMdrhAFMH+vr9giYI=" crossorigin="anonymous"></script>
+    <script language="JavaScript" src="http://www.geoplugin.net/javascript.gp" type="text/javascript"></script>
+    <script src="../js/countries.js"></script>
+    <script src="../js/app.js"></script>
+    <script src="js/redirect.js"></script>
+</body>
+
+</html>

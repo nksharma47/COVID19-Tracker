@@ -1,0 +1,380 @@
+.header{
+    background-color: #fff0f5;
+    padding: 10px 0;
+    font-family: orbitron;
+    font-size: 18px;
+}
+
+.navbar-fixed-top {
+  top: -70px; /* you'll have to figure out the exact number here */
+}
+
+.navbar-fixed-top, .navbar-fixed-bottom {
+  position: relative; /* this can also be static */
+}
+
+.secondrow{
+    background-image: url("../images/b_ground.gif");
+    height: 550px;
+}
+
+.secondrow .left img{
+    max-height: 280px;
+    max-width: 280px;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    animation: beat 2s infinite alternate;
+}
+
+@keyframes beat{
+	to { transform: scale(1.3); }
+}
+
+.secondrow .right h1{
+    font-weight: bolder;
+    color: #fff;
+    display: block;
+    margin: auto;
+    padding: auto;
+    font-family: orbitron;
+    font-size: 60px;
+}
+
+.thirdrow{
+    background-color: #e6e6ff;
+    padding: 40px 0;
+}
+
+.thirdrow img{
+    max-height: 150px;
+    max-width: 250px;
+    display: block;
+    margin: 20px auto;
+    background-color: #e6e6ff;
+    
+}
+
+.thirdrow h1,h3{
+    display: block;
+    margin: auto;
+    color: #4747d1;
+    font-family: orbitron;
+}
+
+.fourthrow{
+    background-color: aqua;
+    height: 150px;
+}
+
+.fourthrow h1{
+    font-family: orbitron;
+    font-size: 50px;
+}
+
+.fifthrow{
+    background-color: aqua;
+    padding: 10px 0 40px 0;
+}
+
+.fifthrow .leftimg img{
+    height :250px;
+    width: 60%;
+    margin-bottom: 20px;
+}
+
+.fifthrow .right p{
+    font-family: orbitron;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.sixthrow{
+    background-color: #000;
+}
+
+.hide{
+    display: none;
+}
+
+.fadeIn{
+    animation: fade 0.5s ease-in-out;
+}
+
+@keyframes fade{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.stats{
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)) ,url('images/bg.jpg');
+    background-size: cover;
+}
+
+.latest-report{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 50px;
+
+    color: #FFF;
+}
+
+.country,
+.total-cases,
+.recovered,
+.deaths{
+    height: 100px;
+}
+
+.name{
+    font-size: 2.2em;
+    color: #be64f1;
+    font-weight: bold;
+}
+
+.change-country{
+    cursor: pointer;
+}
+
+.title{
+    font-size: 1.3em;
+}
+.total-cases .value{
+    font-size: 2em;
+    font-weight: bold;
+}
+.recovered .value{
+    font-size: 2em;
+    font-weight: bold;
+    color: #009688;
+}
+.deaths .value{
+    font-size: 2em;
+    font-weight: bold;
+    color: #f44336;
+}
+.new-value{
+    font-size: 1.3em;
+}
+/* -------- CHART -------- */
+.chart{
+    width: 80%;
+    height: 70vh;
+    min-height: 500px;
+
+    margin: 0 auto;
+    padding: 50px 0;
+}
+/* -------- SEARCH COUNTRY -------- */
+.search-country{
+    position: relative;
+    top: 10px;
+}
+.search-box{
+    position: absolute;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 400px;
+    height: 30px;
+
+    background-color: #111;
+
+    z-index: 1;
+}
+.search-box input{
+    width: 360px;
+    height: 25px;
+
+    border: none;
+
+    background-color: transparent;
+    color: #FFF;
+
+    padding-left: 15px;
+
+    font-size: 1.1em;
+}
+.search-box img{
+    width: 20px;
+    padding-right: 5px;
+    cursor: pointer;
+}
+
+.country-list{
+    display: flex;
+
+    position: absolute;
+    top: 30px;
+
+    width: 400px;
+    height: 300px;
+
+    background-color: #111;
+    opacity: 0.9;
+
+    overflow-y: scroll;
+}
+
+.country-list ul{
+    width: 100%;
+}
+
+.country-list ul li{
+    list-style: none;
+    cursor: pointer;
+    padding: 10px;
+    color: #FFF;
+}
+.country-list ul li:hover{
+    border-left: 1px solid #FFF;
+}
+/* SCROLL BAR */
+.country-list::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  .country-list::-webkit-scrollbar-track {
+    background: #111;
+  }
+  
+  /* Handle */
+  .country-list::-webkit-scrollbar-thumb {
+    background: #F1F1F1;
+  }
+  
+  /* Handle on hover */
+  .country-list::-webkit-scrollbar-thumb:hover {
+    background: #FFF;
+  }
+
+.seventhrow{
+    background-color: #fff;
+    padding: 40px 0;
+    font-family: orbitron;
+}
+
+.seventhrow .subrowone h1{
+    margin: 20px 0 20px 0;
+    font-family: orbitron;
+    font-size: 50px;
+}
+
+.seventhrow img{
+    height: 110px;
+    width: 110px;
+}
+.seventhrow .subrowtwo .col-md-3{
+    padding: 25px;
+}
+
+.eighthrow{
+    padding: 40px 0;
+    background-color: #f9ecec;
+}
+
+.eightrow h1{
+    font-family: orbitron;
+    font-size: 50px;
+}
+
+.eighthrow .onenest{
+    padding: 30px 0 40px 0;
+}
+
+.eighthrow .container img{
+    height: 50px;
+    width: 50px;
+}
+
+.eighthrow .container .col*{
+    margin: 10px;
+}
+
+.eighthrow .container img{
+    margin: 10px auto;
+    align-items: center;
+}
+
+.eighthrow .container .row{
+    font-weight: 400;
+    color: #260d1a;
+}
+
+.eighthrow .container .row h7{
+    color: brown;
+    font-family: orbitron;
+    font-size: 22px;
+}
+
+.eighthrow .container .row p{
+    font-family: orbitron;
+    font-size: 18px;
+}
+
+
+.ninthrow{
+    margin: 20px 0 40px 0;
+}
+
+.ninthrow h1{
+    display: block;
+    margin: 40px auto;
+    text-align: center;
+    font-size: 50px;
+}
+
+.footerrow
+{
+    background-color: teal;
+    padding: 5px;
+    color: #fff;
+}
+
+@media screen and (max-width: 600px){
+    .latest-report{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

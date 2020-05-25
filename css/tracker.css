@@ -1,0 +1,65 @@
+body{
+    font-family: orbitron;
+}
+.header{
+    background-color: #fff0f5;
+    padding: 10px;
+}
+
+.secondrow{
+    background-color: #f5f5f0;
+    padding: 50px;
+    margin-top: 15px;
+}
+
+.secondrow h1{
+    font-family: orbitron;
+    font-size: 50px;
+    line-height: 1.2;
+    font-weight: 500;
+    color: #000099;
+}
+
+.thirdrow h5,p{
+    margin: 6px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.fourthrow{
+    background-color: #f5f5f0;
+    padding: 40px;
+}
+
+.fourthrow h3{
+    color: #008080;
+}
+
+.fourthrow h5{
+    color: #4d004d;
+}
+
+.tablerow{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.tablerow th{
+    font-size: 23px;   
+}
+
+.tablerow td small{
+    color: red;
+}
+
+.tablerow tr{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.footerrow
+{
+    background-color: teal;
+    padding: 5px;
+    color: #fff;
+}
